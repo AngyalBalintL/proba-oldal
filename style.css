@@ -351,11 +351,16 @@ html, body {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
   header,
-  nav,
-  .nav,
-  .navbar,
-  .menu {
+  .fejlec,
+  .topbar,
+  nav {
     display: flex !important;
     flex-wrap: wrap !important;
     align-items: center !important;
@@ -366,36 +371,33 @@ html, body {
     padding: 10px 12px !important;
   }
 
-  header > ul,
-  header > div:not(:first-child),
-  nav > ul,
-  nav > div,
-  .nav-links,
-  .menu-lista {
-    order: 10 !important;
-    flex: 1 1 100% !important;
-    width: 100% !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 6px 10px !important;
-    margin: 4px 0 0 0 !important;
-    padding: 0 !important;
-  }
-
   header a,
-  nav a,
-  .nav a,
-  .navbar a,
-  .menu a,
   header button,
+  nav a,
   nav button {
     position: static !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    margin: 0 !important;
+    max-width: 100% !important;
     white-space: nowrap !important;
     font-size: 13px !important;
     padding: 6px 8px !important;
+  }
+
+  .rolam-grid,
+  .hero-grid,
+  .kartya-grid-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  .rolam-grid > div,
+  .rolam-kep,
+  .kep-doboz,
+  .illusztarcio-doboz {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
