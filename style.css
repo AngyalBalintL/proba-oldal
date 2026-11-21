@@ -332,3 +332,45 @@ footer { padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); color
 .kartya-grid-2 {
   margin-top: 24px;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  header, nav, .nav, .menu, .navbar {
+    flex-wrap: wrap !important;
+    max-width: 100% !important;
+    gap: 8px !important;
+  }
+
+  img, video, .hero, .card, .kartya, .kartya-grid-2 {
+    max-width: 100% !important;
+    height: auto;
+  }
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  header, nav, .nav, .menu, .navbar {
+    flex-wrap: wrap !important;
+    max-width: 100% !important;
+    gap: 8px !important;
+  }
+
+  img, video, .hero, .card, .kartya, .kartya-grid-2 {
+    max-width: 100% !important;
+    height: auto;
+  }
+}
