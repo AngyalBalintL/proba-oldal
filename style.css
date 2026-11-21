@@ -351,53 +351,50 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  html,
-  body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+  .navigacio,
+  .nav-belso {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 10px 12px !important;
   }
 
-  header,
-  .fejlec,
-  .topbar,
-  nav {
+  .nav-belso {
     display: flex !important;
     flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: space-between !important;
-    gap: 8px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 10px 12px !important;
+    gap: 10px !important;
   }
 
-  header a,
-  header button,
-  nav a,
-  nav button {
-    position: static !important;
-    max-width: 100% !important;
+  .marka {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+
+  .marka span {
+    white-space: nowrap !important;
+    font-size: 15px !important;
+  }
+
+  .nav-gomb {
+    flex: 0 0 auto !important;
     white-space: nowrap !important;
     font-size: 13px !important;
-    padding: 6px 8px !important;
+    padding: 7px 11px !important;
   }
 
-  .rolam-grid,
-  .hero-grid,
-  .kartya-grid-2 {
+  .nav-linkek {
+    order: 10 !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
     display: flex !important;
-    flex-direction: column !important;
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-    width: 100% !important;
+    flex-wrap: wrap !important;
+    gap: 6px 12px !important;
+    margin-top: 4px !important;
   }
 
-  .rolam-grid > div,
-  .rolam-kep,
-  .kep-doboz,
-  .illusztarcio-doboz {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
+  .nav-linkek a {
+    white-space: nowrap !important;
+    font-size: 13px !important;
   }
 }
